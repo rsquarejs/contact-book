@@ -4,6 +4,7 @@
   "description": "List of contacts",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/rsquarejs/contact-book#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mysql": "^2.11.1",
     "sequelize": "^3.23.6",
