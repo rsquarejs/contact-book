@@ -1,0 +1,19 @@
+extends layout.jade
+
+block content
+  div.text-center
+    div.col-md-8.col-md-offset-2
+      h2.text-success  Add New Contact Detail
+  form.form-control-group(name='new_contact' method='post' action='/contacts' role='form')
+    div.col-md-8.col-md-offset-2
+      div.form-group
+        label(for='project-name') Name
+        input.form-control(type='text' name='name' id='contact-name' required)
+      div.form-group
+        label(for='project-link') Number
+        input.form-control(type='text' name='phone' id='contact-number')
+      div.form-group
+        label(for='project-description') Address
+        textarea.form-control(type='text' name='address' id='contact-address' required)
+
+      button.btn.btn-success(type='submit') Submit
